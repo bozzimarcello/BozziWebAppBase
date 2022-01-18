@@ -1,0 +1,19 @@
+﻿@page
+@model BozziWebAppBase.Pages.IndexModel
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Web App Base</title>
+</head>
+<body>
+    <h1>Home - Web App Base</h1>
+    <p>Timestamp del server: @DateTime.Now.ToString()</p>
+    <form action="/search" method="get">
+        <label for="fname">Inserisci una chiave di ricerca:</label><br />
+        <input type="text" id="txt_q" name="q" /><br />
+        <input type="submit" value="Invia" />
+    </form>
+</body>
+</html>

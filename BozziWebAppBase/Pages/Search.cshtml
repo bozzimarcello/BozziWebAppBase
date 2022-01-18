@@ -1,0 +1,22 @@
+﻿@page
+@model BozziWebAppBase.Pages.SearchModel
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search - Web App Base</title>
+</head>
+<body>
+    <h1>Search - Web App Base</h1>
+    <p>Risultati per @Model.Q</p>
+    @foreach (var r in Model.Results)
+    {
+        <div style="border: 1px solid #808080; margin-bottom:10px;">
+            <div>Id: @r.Id.ToString()</div>
+            <div>Titolo: @r.Titolo.ToString()</div>
+            <div>Descrizione: @r.Descrizione.ToString()</div>
+        </div>
+    }
+</body>
+</html>
