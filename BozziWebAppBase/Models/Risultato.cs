@@ -8,7 +8,7 @@ namespace BozziWebAppBase.Models
     public class Risultato
     {
         public int Id { get; set; }
-        public string Titolo { get; set; }
-        public string Descrizione { get; set; }
+        public string Nome { get; set; }
+        public string Cognome { get; set; }
     }
 }

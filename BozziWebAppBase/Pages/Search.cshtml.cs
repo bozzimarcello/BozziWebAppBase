@@ -15,7 +15,7 @@ namespace BozziWebAppBase.Pages
         public void OnGet(string q)
         {
             Q = q;
-            Results = RisultatiDAL.GetAllRisultati();
+            Results = RisultatiDAL.GetAllRisultati(q);
         }
     }
 }
